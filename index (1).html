@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> * * * Oficinas - Vamos festejar as possibilidades de inovação: IA como recurso pedagógico * * * </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .intro {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            border-left: 5px solid #3498db;
+        }
+
+        .intro h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .category {
+            margin-bottom: 50px;
+        }
+
+        .category-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+            display: flex;
+            align-items: center;
+        }
+
+        .category-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+            background: #3498db;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .platforms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .platform-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 15px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .platform-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            border-color: #3498db;
+        }
+
+        .platform-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .platform-logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .platform-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .platform-company {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin-top: 2px;
+        }
+
+        .platform-description {
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .platform-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .platform-link:hover {
+            background: linear-gradient(135deg, #2980b9, #1f5f8b);
+            transform: scale(1.05);
+        }
+
+        .tips-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 40px;
+        }
+
+        .tips-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .tips-list {
+            list-style: none;
+        }
+
+        .tips-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .tips-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .platforms-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .category-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>*** Oficinas - Vamos festejar as possibilidades de inovação: IA como recurso pedagógico ***</h1>
+            <p>Guia Completo de Recursos para Educação e Pesquisa</p>
+        </div>
+
+        <div class="content">
+            <div class="intro">
+                <h2>📚 Sobre este Guia</h2>
+                <p>Este guia apresenta uma seleção cuidadosa de plataformas de Inteligência Artificial organizadas por categoria de uso. Cada ferramenta foi escolhida por sua relevância educacional e facilidade de acesso, proporcionando recursos valiosos para estudantes, educadores e pesquisadores.</p>
+            </div>
+
+            <div class="category">
+                <h2 class="category-title">
+                    <div class="category-icon">💬</div>
+                    Assistentes Conversacionais
+                </h2>
+                <div class="platforms-grid">
+                    <div class="platform-card">
+                        <div class="platform-header">
+                            <div class="platform-logo" style="background: linear-gradient(135deg, #4285f4, #34a853);">G</div>
+                            <div>
+                                <div class="platform-name">Gemini</div>
+                                <div class="platform-company">Google</div>
+                            </div>
+                        </div>
+                        <div class="platform-description">
+                            Ferramenta de IA generativa do Google para responder perguntas, gerar textos e códigos. Excelente para pesquisa acadêmica e apoio educacional.
+                        </div>
+                        <a href="https://gemini.google.com" class="platform-link" target="_blank">Acessar Plataforma</a>
+                    </div>
+
+                    <div class="platform-card">
+                        <div class="platform-header">
+                            <div class="platform-logo" style="background: linear-gradient(135deg, #10a37f, #1a7f64);">C</div>
+                            <div>
+                                <div class="platform-name">ChatGPT</div>
+                                <div class="platform-company">OpenAI</div>
+                            </div>
+                        </div>
+                        <div class="platform-description">
+                            Plataforma de IA conversacional da OpenAI, utilizada para apoio na escrita, estudos e programação. Ideal para tutoria personalizada.
+                        </div>
+                        <a href="https://chat.openai.com" class="platform-link" target="_blank">Acessar Plataforma</a>
+                    </div>
+
+                    <div class="platform-card">
+                        <div class="platform-header">
+                            <div class="platform-logo" style="background: linear-gradient(135deg, #667eea, #764ba2);">D</div>
+                            <div>
+                                <div class="platform-name">DeepSeek</div>
+                                <div class="platform-company">DeepSeek AI</div>
+                            </div>
+                        </div>
+                        <div class="platform-description">
+                            Assistente de IA com foco em busca inteligente e geração de conteúdo técnico e educacional. Especializado em análises profundas.
+                        </div>
+                        <a href="https://www.deepseek.com" class="platform-link" target="_blank">Acessar Plataforma</a>
+                    </div>
+
+                    <div class="platform-card">
+                        <div class="platform-header">
+                            <div class="platform-logo" style="background: linear-gradient(135deg, #ff6b35, #f7931e);">Q</div>
+                            <div>
+                                <div class="platform-name">manus.im</div>
+                                <div class="platform-company">Manus Team</div>
+                            </div>
+                        </div>
+                        <div class="platform-description">
+                            Plataforma de IA desenvolvida pela Manus Team, voltada para automação de tarefas e interação com o usuário em linguagem natural. Forte em execução de tarefas complexas.
+                        </div>
+                        <a href="https://manus.im" class="platform-link" target="_blank">Acessar manus.im</a>
+                    </div>
+
+                    <div class="platform-card">
+                        <div class="platform-header">
+                            <div class="platform-logo" style="background: linear-gradient(135deg, #0078d4, #106ebe);">M</div>
+                            <div>
+                                <div class="platform-name">Copilot AI</div>
+                                <div class="platform-company">Microsoft</div>
+                            </div>
+                        </div>
+                        <div class="platform-description">
+                            Ferramenta da Microsoft integrada ao Bing e ao Office para geração de conteúdo com IA. Perfeita para produtividade acadêmica.
+                        </div>
+                        <a href="https://copilot.microsoft.com/" class="platform-link" target="_blank">Acessar Plataforma</a>
+                        <div style="text-align: center; margin-top: 15px;">
+                            <img src="qrcode_copilot_ios.png" alt="QR Code Copilot iOS" style="width: 100px; height: 100px; margin-bottom: 5px;">
+                            <p style="font-size: 0.9rem; color: #555;">baixar o Copilot - somente iOS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <h2 class="category-title">
+                    <div class="category-icon">🎨</div>
+                    Criação Visual e Multimídia
+                </h2>
+                <div class="platforms-grid">
+                    <div class="platform-card">
+                        <div class="platform-header">
+                            <div class="platform-logo" style="background: linear-gradient(135deg, #8b5cf6, #a855f7);">L</div>
+                            <div>
+                                <div class="platform-name">Leonardo AI</div>
+                                <div class="platform-company">Leonardo.Ai</div>
+                            </div>
+                        </div>
+                        <div class="platform-description">
+                            Plataforma de geração de imagens por IA, útil para criação de ilustrações educacionais, materiais didáticos e recursos visuais.
+                        </div>
+                        <a href="https://app.leonardo.ai/auth/login" class="platform-link" target="_blank">Acessar Plataforma</a>
+                    </div>
+
+                    <div class="platform-card">
+                        <div class="platform-header">
+                            <div class="platform-logo" style="background: linear-gradient(135deg, #ff4757, #ff3838);">L5</div>
+                            <div>
+                                <div class="platform-name">Lumen5</div>
+                                <div class="platform-company">Lumen5</div>
+                            </div>
+                        </div>
+                        <div class="platform-description">
+                            Ferramenta que transforma textos em vídeos educativos de forma automatizada com IA. Ideal para criar conteúdo audiovisual.
+                        </div>
+                        <a href="https://lumen5.com/auth/login/" class="platform-link" target="_blank">Acessar Plataforma</a>
+                    </div>
+
+                    <div class="platform-card">
+                        <div class="platform-header">
+                            <div class="platform-logo" style="background: linear-gradient(135deg, #6c5ce7, #a29bfe);">Γ</div>
+                            <div>
+                                <div class="platform-name">Gamma App</div>
+                                <div class="platform-company">Gamma</div>
+                            </div>
+                        </div>
+                        <div class="platform-description">
+                            Plataforma que cria apresentações interativas e visuais com apoio de IA generativa. Perfeita para slides educacionais impactantes.
+                        </div>
+                        <a href="https://gamma.app" class="platform-link" target="_blank">Acessar Plataforma</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tips-section">
+                <h3>💡 Dicas para Uso Efetivo</h3>
+                <ul class="tips-list">
+                    <li>Sempre verifique e valide as informações geradas pelas IAs</li>
+                    <li>Use prompts claros e específicos para obter melhores resultados</li>
+                    <li>Combine diferentes ferramentas para projetos mais complexos</li>
+                    <li>Mantenha-se atualizado sobre as políticas de uso de cada plataforma</li>
+                    <li>Pratique o uso ético e responsável da inteligência artificial</li>
+                    <li>Documente suas experiências para compartilhar com colegas</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
